@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Experience Hub</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        /* Gradient background */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #002f6c, #007BFF, #00d4ff);
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            padding: 50px 20px 10px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Animated car banner */
+        .car-banner {
+            position: relative;
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .car-banner img {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            animation: drive 10s linear infinite;
+        }
+
+        @keyframes drive {
+            0% { left: -250px; }
+            100% { left: 110%; }
+        }
+
+        .intro {
+            margin-top: 50px;
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #fff;
+            color: #002f6c;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #002f6c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚘 Car Experience Hub</h1>
+        <p>Your trusted destination for exploring the latest car models</p>
+    </header>
+
+    <div class="car-banner">
+        <img src="https://cdn-icons-png.flaticon.com/512/7431/7431822.png" alt="Car Animation">
+    </div>
+
+    <main class="intro">
+        <h2>Welcome to Car Experience Hub</h2>
+        <p>Discover your dream car with detailed specs, visuals, and pricing — all hosted on AWS Cloud.</p>
+        <a href="car.html" class="button">Explore Cars</a>
+    </main>
+</body>
+</html>

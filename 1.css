@@ -1,0 +1,84 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #002f6c;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.car {
+    background-color: white;
+    border-radius: 12px;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car h2 {
+    color: #004aad;
+}
